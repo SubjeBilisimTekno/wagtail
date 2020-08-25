@@ -31,9 +31,7 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Clone Repository
-      uses: actions/checkout@master
-    - name: Build and Test
-      run: make test
+      uses: actions/checkout@master 
     - name: Analyze with SonarCloud
       uses: sonarsource/sonarcloud-github-action@master
       env:
