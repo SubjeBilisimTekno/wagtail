@@ -66,8 +66,6 @@ jobs:
       env:
         SNYK_TOKEN: ${{ secrets.SNYKTOKEN }}
       with:
-        image: snyky
         args: --severity-threshold=high
-              --file=Dockerfile
         command: monitor
         
