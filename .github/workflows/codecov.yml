@@ -49,6 +49,7 @@ jobs:
           python-version: 3.8
       - name: Generate coverage report
         run: |
+          python -m pip install django
           pip install pytest
           pip install pytest-cov
           pytest --cov=./ --cov-report=xml
