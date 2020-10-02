@@ -29,13 +29,13 @@ jobs:
 #   - name: Install package
 #      run: |
 #        pip install -e .
-    - name: Test with pytest
-      run: |
-        pip install pytest
-        pip install pytest-cov
-        pip install scipy
-        pytest -v tests/ --cov=wagtail/
-      env: # Or as an environment variable
-        super_secret: ${{ secrets.CODECOV_TOKEN }}
+#    - name: Test with pytest
+#     run: |
+#        pip install pytest
+#        pip install pytest-cov
+#        pip install scipy
+#        pytest -v tests/ --cov=wagtail/
+#      env: # Or as an environment variable
+#        super_secret: ${{ secrets.CODECOV_TOKEN }}
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1.0.10
