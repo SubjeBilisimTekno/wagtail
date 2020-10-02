@@ -53,6 +53,7 @@ jobs:
           python -m pip install django
           pip install django-modelcluster
           pip install Willow
+          pip install django-taggit
           pip install pytest
           pip install pytest-cov
           pytest --cov=./ --cov-report=xml
