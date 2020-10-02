@@ -34,7 +34,7 @@ jobs:
         pip install pytest
         pip install pytest-cov
         pip install scipy
-        pytest -v tests/ --cov=exampy/
+        pytest -v tests/ --cov=wagtail/
       env: # Or as an environment variable
         super_secret: ${{ secrets.CODECOV_TOKEN }}
     - name: Upload coverage to Codecov
