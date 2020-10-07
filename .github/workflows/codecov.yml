@@ -40,7 +40,7 @@ jobs:
 #    - name: Upload coverage to Codecov
 #      uses: codecov/codecov-action@v1.0.10
     name: Codecov Workflow
-    
+
     steps:
       - uses: actions/checkout@v1
       - name: Set up Python
@@ -52,11 +52,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          python -m pip install django
-          pip install django-modelcluster
-          pip install Willow
-          pip install django-taggit
-          pip install django-rest_framework
+  #        python -m pip install django
+  #        pip install django-modelcluster
+  #        pip install Willow
+  #        pip install django-taggit
+  #        pip install django-rest_framework
           pip install pytest
           pip install pytest-cov
           pytest --cov=./ --cov-report=xml
