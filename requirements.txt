@@ -10,7 +10,6 @@ draftjs_exporter==4.1.1
 elasticsearch==7.9.1
 freezegun==1.0.0
 l18n==2018.5
-local==0.0.0
 openpyxl==3.0.5
 Pillow==7.2.0
 pytz==2020.1
