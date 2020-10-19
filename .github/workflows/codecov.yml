@@ -89,11 +89,11 @@ jobs:
       main: ${{ steps.filter.outputs.main }}
       minimal: ${{ steps.filter.outputs.minimal }}
     steps:
-#    - uses: actions/checkout@v2
-#    - uses: dorny/paths-filter@v2.5.0
-#      id: filter
-#      with:
-#        filters: '.github/filters.yml'
+      - uses: actions/checkout@v2
+      - uses: dorny/paths-filter@v2.5.0
+        id: filter
+        with:
+          filters: '.github/filters.yml'
 
   release_main:
     runs-on: ubuntu-latest

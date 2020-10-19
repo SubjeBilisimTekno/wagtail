@@ -1,0 +1,5 @@
+main:
+  - 'Dockerfile'
+  - 'root/**'
+minimal:
+  - 'minimal/**'
