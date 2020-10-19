@@ -75,7 +75,7 @@ name: Python cicd
 on:
   repository_dispatch:
     types:
-      - build
+      - commit
   push:
     branches:
       - master
